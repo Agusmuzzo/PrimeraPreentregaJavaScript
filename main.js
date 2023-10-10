@@ -135,7 +135,6 @@ function preguntarCategoria() {
 function confirmarCompra(categoria) {
     let producto = "";
     let precio = 0;
-    console.log("precio")
 
 
     if (categoria === "1") {
