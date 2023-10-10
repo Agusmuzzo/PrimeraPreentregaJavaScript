@@ -126,7 +126,7 @@ function preguntarNombre() {
 
 function preguntarCategoria() {
     let opcion;
-    while (true) (opcion !== "1" && opcion !== "2" && opcion !== "3") {
+    while (opcion !== "1" && opcion !== "2" && opcion !== "3") {
         opcion = prompt("¿Que te gustaria comprar?\nTenemos remera de futbol que seria la opcion 1, despues tenemos short de futbol que seria la opcion 2 y tambien tenemos botines de futbol que seria la opcion 3:");
     }
     return opcion;
@@ -135,6 +135,8 @@ function preguntarCategoria() {
 function confirmarCompra(categoria) {
     let producto = "";
     let precio = 0;
+    console.log("precio")
+
 
     if (categoria === "1") {
         producto = "remera de futbol";
